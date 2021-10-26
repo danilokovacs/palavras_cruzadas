@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palavras Cruzadas</title>
+
+    <style>
+        .dica{
+            cursor: pointer;
+        }
+
+        .dica:hover{
+            /* background-color: aqua; */
+            transform:scale(1.1,1.1);
+            transition: all 0.5;
+            box-shadow: 0 0 1em black;
+            /* font-size: 32px; */
+            /* transition: 1s; */
+        }
+
+
+    </style>
+</head>
+
+<body>
+    Insira sua resposta: <input minlength="2" id="resposta"><button onclick="teste()">TENTAR</button>
+    
+    
+    
+    <select id="numero_tentativa">
+        <option id="valor1" selected value="CPU">1</option>
+        <option id="valor2" value="ULA">2</option>
+        <option value="REGISTRADORES">3</option>
+        <option value="RAM">4</option>
+        <option value="ROM">5</option>
+        <option value="EPROM">6</option>
+        <option value="FLASH">7</option>
+        <option value="MEMÓRIA DE MASSA">8</option>
+        <option value="">9</option>
+        <option value="">10</option>
+        <option value="">11</option>
+        <option value="">12</option>
+        <option value="">13</option>
+        <option value="">14</option>
+        <option value="">15</option>
+        <option value="">16</option>
+    </select><br>
+
+    <table border="1" style="padding: 12px;border-radius: 5px;border-spacing: 10px;font-size: 30px;">
+        <tr>
+            <td>⠀</td>            <td>⠀</td>             <td>⠀</td>              <td class="dica" onclick="dica2()">2</td>
+        </tr>
+        <tr>
+            <td class="dica" onclick="dica1()">1</td>  <td id="r1l1">⠀</td>    <td id="r1l2">⠀</td>    <td id="r1l3">⠀</td>
+        </tr>
+        <tr>
+            <td>⠀</td>            <td>⠀</td>            <td>⠀</td>      <td id="r2l2">⠀</td>
+        </tr>
+        <tr>
+            <td>⠀</td>           <td>⠀</td>             <td>⠀</td>      <td id="r2l3">⠀</td>
+        </tr>
+    </table>
+
+
+
+
+</body>
+
+</html>
+<script>
+    var contador = 0;
+    
+    function teste() {
+        tentativa = resposta.value.trim().toUpperCase();
+
+
+        
+        if(tentativa == '' || tentativa.length < 2){
+            tentativa = '⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀';
+        }
+        
+
+
+
+
+        if (tentativa == 'CPU' && numero_tentativa.value == 'CPU') {
+            alert("CERTA RESPOSTA!")
+            r1l1.innerHTML = "C";
+            r1l2.innerHTML = "P";
+            r1l3.innerHTML = "U";
+
+            r1l1.style.backgroundColor = 'green';
+            r1l2.style.backgroundColor = 'green';
+            r1l3.style.backgroundColor = 'green';
+            contador += 1;
+        }else if(tentativa == 'ULA' && numero_tentativa.value == 'ULA'){
+            alert("CERTA RESPOSTA!")
+            r1l3.innerHTML = "U"
+            r2l2.innerHTML = "L"
+            r2l3.innerHTML = "A"
+
+            r1l3.style.backgroundColor = 'green';
+            r2l2.style.backgroundColor = 'green';
+            r2l3.style.backgroundColor = 'green';
+            contador += 1;
+        }
+        
+        
+        
+        
+        
+        else if(tentativa != 'CPU' && numero_tentativa.value == 'CPU'){
+            alert("ERROOOOOOOOOOOOOU!!! TENTE NOVAMENTE.")
+            r1l1.innerHTML = tentativa[0]
+            r1l2.innerHTML = tentativa[1]
+            r1l3.innerHTML = tentativa[2]
+
+            r1l1.style.backgroundColor = 'red';
+            r1l2.style.backgroundColor = 'red';
+            r1l3.style.backgroundColor = 'red';
+        }else if(tentativa != "ULA" && numero_tentativa.value == "ULA"){
+            alert("ERROOOOOOOOOOOOOU!!! TENTE NOVAMENTE.")
+            r1l3.innerHTML = tentativa[0]
+            r2l2.innerHTML = tentativa[1]
+            r2l3.innerHTML = tentativa[2]
+            r1l3.style.backgroundColor = 'red';
+            r2l2.style.backgroundColor = 'red';
+            r2l3.style.backgroundColor = 'red';
+        }
+
+
+
+        // else{
+        //     alert("ERROOOOOOOOOOOOOU!!! TENTE NOVAMENTE.")
+        //     resposta.value = ''
+        // }
+        
+    }
+
+    function dica1(){
+        alert("DICA 1: VOCÊ É CHATÃO");
+        if(valor1.selected == false){
+            valor1.selected = true;
+        }
+
+    }
+
+    function dica2(){
+        alert("DICA 2: VOCÊ É BOBÃO");
+        if(valor2.selected == false){
+            valor2.selected = true;
+        };
+    }
+
+</script>
