@@ -520,6 +520,8 @@
                 <option id="valor15" value="DUAL CORE">15</option>
                 <option id="valor16" value="QUAD CORE">16</option>
             </select><br>
+            Respostas Certas: <div id="true_answer"></div>
+            <img id="congratulation" style="display: none;" src="https://1.bp.blogspot.com/-kahzZlXrfYc/XceQgW8_0SI/AAAAAAAB11o/yLVmp4ZQ6hsalFLO9SXX_XJeeFqEct6JwCLcBGAsYHQ/s640/ac55bb99d22f13bb3d9ee9fa8d7b186a.gif" alt="PARABÉNS!">
         </div>
 
     </div>
@@ -556,7 +558,9 @@
             r1l2.style.backgroundColor = 'lightgreen';
             r1l3.style.backgroundColor = 'lightgreen';
             
+            // CONTADOR DE RESPOSTA CERTA 
             contador += 1;
+            true_answer.innerHTML = contador;
         } 
         else if (tentativa == 'ULA' && combobox == 'ULA') {
             alert("CERTA RESPOSTA!")
@@ -568,7 +572,9 @@
             r2l2.style.backgroundColor = 'lightgreen';
             r2l3.style.backgroundColor = 'lightgreen';
             
+            // CONTADOR DE RESPOSTA CERTA 
             contador += 1;
+            true_answer.innerHTML = contador;
         }
         else if(tentativa == 'REGISTRADORES' && combobox == 'REGISTRADORES'){
             alert("CERTA RESPOSTA!")
@@ -600,8 +606,9 @@
             r3l12.style.backgroundColor = 'lightgreen';
             r3l13.style.backgroundColor = 'lightgreen';
             
+            // CONTADOR DE RESPOSTA CERTA 
             contador += 1;
-
+            true_answer.innerHTML = contador;
         }
         else if(tentativa == 'RAM' && combobox == 'RAM'){
             alert("CERTA RESPOSTA!")
@@ -614,7 +621,9 @@
             r4l2.style.backgroundColor = 'lightgreen'
             r4l3.style.backgroundColor = 'lightgreen'
             
+            // CONTADOR DE RESPOSTA CERTA 
             contador += 1;
+            true_answer.innerHTML = contador;
         }
         else if(tentativa == 'ROM' && combobox == 'ROM'){
             alert("CERTA RESPOSTA!")
@@ -626,7 +635,9 @@
             r5l2.style.backgroundColor = 'lightgreen'
             r5l3.style.backgroundColor = 'lightgreen'
             
+            // CONTADOR DE REPOSTA CERTA 
             contador += 1;
+            true_answer.innerHTML = contador;
         }
         else if(tentativa == 'EPROM' && combobox == 'EPROM'){
             alert("CERTA RESPOSTA!")
@@ -642,7 +653,9 @@
             r6l4.style.backgroundColor = 'lightgreen';
             r6l5.style.backgroundColor = 'lightgreen';
 
+            // CONTADOR DE RESPOSTA CERTA 
             contador += 1;
+            true_answer.innerHTML = contador;
         }
         else if(tentativa == 'FLASH' && combobox == 'FLASH'){
             alert("CERTA RESPOSTA!")
@@ -658,7 +671,9 @@
             r11l10.style.backgroundColor = 'lightgreen';
             r7l5.style.backgroundColor = 'lightgreen';
 
+            // CONTADOR DE RESPOSTA CERTA 
             contador += 1;
+            true_answer.innerHTML = contador;
         }
         else if(tentativa == 'MEMORIA DE MASSA' && combobox == 'MEMORIA DE MASSA'){
             alert("CERTA RESPOSTA!")
@@ -696,7 +711,9 @@
             r8l15.style.backgroundColor = 'lightgreen';
             r8l16.style.backgroundColor = 'lightgreen';
             
+            // CONTADOR DE RESPOSTA CERTA 
             contador += 1;
+            true_answer.innerHTML = contador;
         }
         else if(tentativa == 'DMA' && combobox == 'DMA'){
             alert("CERTA RESPOSTA!")
@@ -708,7 +725,9 @@
             r4l3.style.backgroundColor = 'lightgreen';
             r9l3.style.backgroundColor = 'lightgreen';
 
+            // CONTADOR DE RESPOSTA CERTA 
             contador += 1;
+            true_answer.innerHTML = contador;
         }
         else if(tentativa == 'CS' && combobox == 'CS'){
             alert("CERTA RESPOSTA!")
@@ -719,7 +738,9 @@
             r10l1.style.backgroundColor = "lightgreen";
             r10l2.style.backgroundColor = "lightgreen";
 
+            // CONTADOR DE RESPOSTA CERTA 
             contador += 1;
+            true_answer.innerHTML = contador;
         }
         else if(tentativa == 'ADRESS BUS' && combobox == 'ADRESS BUS'){
             alert("CERTA RESPOSTA!")
@@ -745,7 +766,9 @@
             r11l9.style.backgroundColor = "lightgreen"; 
            r11l10.style.backgroundColor = "lightgreen"; 
 
-           contador += 1;
+           // CONTADOR DE RESPOSTA CERTA 
+            contador += 1;
+            true_answer.innerHTML = contador;
         }
         else if(tentativa == 'DATA BUS' && combobox == 'DATA BUS'){
             alert("CERTA RESPOSTA!")
@@ -767,7 +790,9 @@
             r12l7.style.backgroundColor = "lightgreen";
             r12l8.style.backgroundColor = "lightgreen";
             
+            // CONTADOR DE RESPOSTA CERTA 
             contador += 1;
+            true_answer.innerHTML = contador;
         }
         else if(tentativa == 'I5' && combobox == 'I5'){
             alert("CERTA RESPOSTA!")
@@ -777,7 +802,9 @@
             r8l6.style.backgroundColor = "lightgreen"
             r13l2.style.backgroundColor = "lightgreen"
             
+            // CONTADOR DE RESPOSTA CERTA 
             contador += 1;
+            true_answer.innerHTML = contador;
         }
         else if(tentativa == 'I7' && combobox == 'I7'){
             alert("CERTA RESPOSTA!")
@@ -787,7 +814,9 @@
             r3l4.style.backgroundColor = "lightgreen";
             r14l2.style.backgroundColor = "lightgreen";
 
+            // CONTADOR DE RESPOSTA CERTA 
             contador += 1;
+            true_answer.innerHTML = contador;
         }
         else if(tentativa == 'DUAL CORE' && combobox == 'DUAL CORE'){
             alert("CERTA RESPOSTA!")
@@ -811,7 +840,9 @@
             r16l8.style.backgroundColor = "lightgreen";
             r15l9.style.backgroundColor = "lightgreen";
             
+            // CONTADOR DE RESPOSTA CERTA 
             contador += 1;
+            true_answer.innerHTML = contador;
         }
         else if(tentativa == 'QUAD CORE' && combobox == 'QUAD CORE'){
             alert("CERTA RESPOSTA!")
@@ -835,7 +866,9 @@
             r16l8.style.backgroundColor = "lightgreen";
             r16l9.style.backgroundColor = "lightgreen";
 
+            // CONTADOR DE RESPOSTA CERTA 
             contador += 1;
+            true_answer.innerHTML = contador;
         }
         
         // FIM VALIDAÇÃO RESPOSTA CERTA
@@ -1114,6 +1147,11 @@
         }
         
         // FIM VALIDAÇÃO RESPOSTA ERRADA
+
+        if(contador == 16){
+            true_answer.innerHTML = 'PARABÉNS';
+            congratulation.style.display = 'block';
+        }
     }
 
 </script>
