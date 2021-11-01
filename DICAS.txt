@@ -1,0 +1,22 @@
+CPU - (UNIDADE CENTRAL DE PROCESSAMENTO)
+Recebe instruções gravadas para inicialização e é responsável por dar vida à placa, "Coração do computador".
+
+ROM
+Memória de programa atribuída ao coração do computador, é onde as instruções são gravadas.
+
+DUAL CORE
+Processador com dois núcleos atuando internamente.
+
+REGISTRADORES
+Estão no topo da pirâmide da hierarquia das memórias, responsáveis por uma memória local rápida, podendo ser de propósito geral (movimentação de dados e operações lógicas e aritméticas) ou especial.
+
+ULA
+Unidade responsável pelas operações lógicas (NOT,AND,OR,XOR) e aritméticas (adição, subtração, multiplicação e divisão).
+
+DATA BUS (barramento de dados)
+Responsável por onde os dados circulam, sendo recebidos ou enviados através deste transporte de informações internamento no processador.
+
+ADRESS BUS (barramento de endereços)
+Responsável por indicar a localização para onde os dados irão circular internamento no processador.
+
+
