@@ -1,22 +1,49 @@
-CPU - (UNIDADE CENTRAL DE PROCESSAMENTO)
+1. CPU - (UNIDADE CENTRAL DE PROCESSAMENTO)
 Recebe instruções gravadas para inicialização e é responsável por dar vida à placa, "Coração do computador".
 
-ROM
-Memória de programa atribuída ao coração do computador, é onde as instruções são gravadas.
-
-DUAL CORE
-Processador com dois núcleos atuando internamente.
-
-REGISTRADORES
-Estão no topo da pirâmide da hierarquia das memórias, responsáveis por uma memória local rápida, podendo ser de propósito geral (movimentação de dados e operações lógicas e aritméticas) ou especial.
-
-ULA
+2. ULA - (UNIDADE LÓGICA ARITMÉTICA)
 Unidade responsável pelas operações lógicas (NOT,AND,OR,XOR) e aritméticas (adição, subtração, multiplicação e divisão).
 
-DATA BUS (barramento de dados)
+3. REGISTRADORES
+Estão no topo da pirâmide da hierarquia das memórias, responsáveis por uma memória local rápida, podendo ser de propósito geral (movimentação de dados e operações lógicas e aritméticas) ou especial.
+
+4. RAM
+Memória de armazenamento de dados temporários, ao desligar o computador ela é apagada, é volátil.
+
+5. ROM
+Memória de programa atribuída ao coração do computador, é onde as instruções são gravadas, não volátil.
+
+6. EPROM
+
+7. FLASH
+
+8. MEMÓRIA DE MASSA
+
+9. DMA
+Possibilita que os periféricos acessem a memória RAM diretamente, sem ser necessário passarem pelo processador.
+
+10. CS
+
+11. ADRESS BUS (barramento de endereços)
+Responsável por indicar a localização para onde os dados irão circular internamento no processador.
+
+12. DATA BUS (barramento de dados)
 Responsável por onde os dados circulam, sendo recebidos ou enviados através deste transporte de informações internamento no processador.
 
-ADRESS BUS (barramento de endereços)
-Responsável por indicar a localização para onde os dados irão circular internamento no processador.
+13. I5
+
+14. I7
+
+15. DUAL CORE
+Processador com dois núcleos atuando internamente.
+
+16. QUAD CORE
+Processador com quatro núcleos atuando internamente.
+
+
+
+
+
+
 
 
