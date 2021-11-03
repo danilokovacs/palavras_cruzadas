@@ -1,4 +1,4 @@
-1. CPU - (UNIDADE CENTRAL DE PROCESSAMENTO)
+﻿1. CPU - (UNIDADE CENTRAL DE PROCESSAMENTO)
 Recebe instruções gravadas para inicialização e é responsável por dar vida à placa, "Coração do computador".
 
 2. ULA - (UNIDADE LÓGICA ARITMÉTICA)
@@ -14,8 +14,10 @@ Memória de armazenamento de dados temporários, ao desligar o computador ela é
 Memória de programa atribuída ao coração do computador, é onde as instruções são gravadas, não volátil.
 
 6. EPROM
+Memoria não volatil usada em microcontroladores capz de armazenar as informações, para serem recuperadas e utilizadas posteriormente, mesmo depois de a alimentação ter sido interrompida.
 
 7. FLASH
+
 
 8. MEMÓRIA DE MASSA
 
