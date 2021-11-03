@@ -1,11 +1,11 @@
 ﻿1. CPU - (UNIDADE CENTRAL DE PROCESSAMENTO)
-Recebe instruções gravadas para inicialização e é responsável por dar vida à placa, "Coração do computador".
+Responsável por receber instruções gravadas para inicialização, calcular e realizar tarefas determinadas pelo usuário e é denominado como "Cérebro do computador".
 
 2. ULA - (UNIDADE LÓGICA ARITMÉTICA)
-Unidade responsável pelas operações lógicas (NOT,AND,OR,XOR) e aritméticas (adição, subtração, multiplicação e divisão).
+Responsável pelas operações lógicas e aritméticas dentro do processador.
 
 3. REGISTRADORES
-Estão no topo da pirâmide da hierarquia das memórias, responsáveis por uma memória local rápida, podendo ser de propósito geral (movimentação de dados e operações lógicas e aritméticas) ou especial.
+Estão no topo da pirâmide da hierarquia das memórias, está localizado na estrutura interna de um microprocessador, responsáveis por uma memória local rápida, podendo ser de propósito geral (movimentação de dados e operações lógicas e aritméticas) ou especial.
 
 4. RAM
 Memória de armazenamento de dados temporários, ao desligar o computador ela é apagada, é volátil.
@@ -14,17 +14,19 @@ Memória de armazenamento de dados temporários, ao desligar o computador ela é
 Memória de programa atribuída ao coração do computador, é onde as instruções são gravadas, não volátil.
 
 6. EPROM
-Memoria não volatil usada em microcontroladores capz de armazenar as informações, para serem recuperadas e utilizadas posteriormente, mesmo depois de a alimentação ter sido interrompida.
+Memória não volatil usada em microcontroladores capaz de armazenar as informações, e pode ser reprogramada.
 
 7. FLASH
-
+Memória que mantém informações armazenadas sem a necessidade de uma fonte de energia, usadas frequentemente em eletrônicos portáteis.
 
 8. MEMÓRIA DE MASSA
+Memória não volátil, com grande capacidade de armazenamento e são utilizadas para guardar dados permanentemente.
 
 9. DMA
 Possibilita que os periféricos acessem a memória RAM diretamente, sem ser necessário passarem pelo processador.
 
 10. CS
+Nome de uma linha de controle usada para selecionar um ou um conjunto de circuitos integrados(chips) conectados ao mesmo barramento de computador.
 
 11. ADRESS BUS (barramento de endereços)
 Responsável por indicar a localização para onde os dados irão circular internamento no processador.
@@ -33,8 +35,10 @@ Responsável por indicar a localização para onde os dados irão circular inter
 Responsável por onde os dados circulam, sendo recebidos ou enviados através deste transporte de informações internamento no processador.
 
 13. I5
+Modelo de processador da Fabricante Intel, geralmente com 4 threads, considerado como um intermediário.
 
 14. I7
+Modelo de processador da Fabricante Intel, geralmente com 8 threads, considerado como um top de linha.
 
 15. DUAL CORE
 Processador com dois núcleos atuando internamente.
