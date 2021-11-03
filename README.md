@@ -1,3 +1,3 @@
-# smartmans
+# Palavras Cruzadas
 
-Only smart mans get acess in this repository, if u get the acess, well, you're a smart MAN!
+Repositório criado para uma gameficação de um trabalho para a matéria de Arquitetura Computacional, game criado em HTML/ CSS/ JAVASCRIPT
