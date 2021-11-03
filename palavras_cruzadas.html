@@ -8,6 +8,25 @@
     <title>Palavras Cruzadas</title>
 
     <style>
+        body {
+            background-image: url("https://i.pinimg.com/564x/5d/ca/87/5dca87b6088664ae9fa8080986a58b4c.jpg");
+            background-size: cover;
+        }
+
+        .body{
+            color: #FFF;
+            text-shadow: 0px 2px #000;
+            background-color: #00000030;
+            border-radius: 10px;
+            padding: 2%;
+            height: 98vh;
+        }
+
+        /* .cruzadinha {
+            background-color: #00ffff60;
+            border: 5px dotted #FFF;
+        } */
+
         .dica {
             cursor: pointer;
         }
@@ -15,47 +34,54 @@
         .dica:hover {
             transform: scale(1.1, 1.1);
             transition: all 0.5;
-            box-shadow: 0 0 1em black;            
+            box-shadow: 0 0 1em white;
         }
-        
-        .text-box{
-            border: 1px solid black;
+
+        .text-box {
+            color: #000;
+            border: 1px solid white;
         }
-        .space{
+
+        .space {
             background-color: black;
         }
-        
+
+        input{
+            height: 2%;
+        }
+
     </style>
 </head>
 
 <body>
-    <div style="display: flex;">
-        <div style="display:flex;justify-content:space-between;width:45%">
-            <table border="0"  style="border-spacing: 1px;font-size: 22px;table-layout: fixed;text-align: center;width: 100%">
-                <tr> 
+    <div class="body" style="display: flex; margin: 0; padding: 0;">
+        <div class="cruzadinha" style="display:flex;justify-content:space-evenly;width:45%">
+            <table border="0"
+                style="border-spacing: 1px;font-size: 22px;table-layout: fixed;text-align: center;width: 100%">
+                <tr>
                     <!-- COMEÇO PRIMEIRA LINHA -->
-                        <td>⠀</td>
-                        <td>⠀</td>
-                        <td>⠀</td>
-                        <td>⠀</td>
-                        <td>⠀</td>
-                        <td>⠀</td>
-                        <td>⠀</td>
-                        <td>⠀</td>
-                        <td>⠀</td>
-                        <td>⠀</td>
-                        <td>⠀</td>
-                        <td>⠀</td>
-                        <td>⠀</td>
-                        <td class="dica" onclick="dica7()">7</td>
-                        <td>⠀</td>
-                        <td>⠀</td>
-                        <td>⠀</td>
-                        <td>⠀</td>
+                    <td>⠀</td>
+                    <td>⠀</td>
+                    <td>⠀</td>
+                    <td>⠀</td>
+                    <td>⠀</td>
+                    <td>⠀</td>
+                    <td>⠀</td>
+                    <td>⠀</td>
+                    <td>⠀</td>
+                    <td>⠀</td>
+                    <td>⠀</td>
+                    <td>⠀</td>
+                    <td>⠀</td>
+                    <td class="dica" onclick="dica7()">7</td>
+                    <td>⠀</td>
+                    <td>⠀</td>
+                    <td>⠀</td>
+                    <td>⠀</td>
                     <!-- FIM PRIMEIRA LINHA -->
                 </tr>
-                <tr> 
-                <!-- COMEÇO SEGUNDA LINHA -->
+                <tr>
+                    <!-- COMEÇO SEGUNDA LINHA -->
                     <td>⠀</td>
                     <td>⠀</td>
                     <td>⠀</td>
@@ -74,10 +100,10 @@
                     <td>⠀</td>
                     <td>⠀</td>
                     <td>⠀</td>
-                <!-- FIM SEGUNDA LINHA -->
+                    <!-- FIM SEGUNDA LINHA -->
                 </tr>
                 <tr>
-                <!-- COMEÇO TERCEIRA LINHA -->
+                    <!-- COMEÇO TERCEIRA LINHA -->
                     <td class="dica" onclick="dica1()">1</td>
                     <td id="r1l1" class="text-box">⠀</td>
                     <td id="r1l2" class="text-box">⠀</td>
@@ -96,10 +122,10 @@
                     <td>⠀</td>
                     <td>⠀</td>
                     <td>⠀</td>
-                <!-- FIM TERCEIRA LINHA -->
+                    <!-- FIM TERCEIRA LINHA -->
                 </tr>
                 <tr>
-                <!-- COMEÇO QUARTA LINHA -->
+                    <!-- COMEÇO QUARTA LINHA -->
                     <td>⠀</td>
                     <td>⠀</td>
                     <td>⠀</td>
@@ -118,17 +144,18 @@
                     <td>⠀</td>
                     <td>⠀</td>
                     <td>⠀</td>
-                <!-- FIM QUARTA LINHA -->
+                    <!-- FIM QUARTA LINHA -->
                 </tr>
                 <tr>
-                <!-- COMEÇO QUINTA LINHA -->
+                    <!-- COMEÇO QUINTA LINHA -->
                     <td>⠀</td>
                     <td>⠀</td>
                     <td class="dica" onclick="dica11()">11</td>
                     <td id="r2l3" class="text-box">⠀</td>
                     <td id="r11l0" class="text-box">⠀</td>
                     <td id="r11l2" class="text-box">⠀</td>
-                    <td id="r11l3" class="text-box">⠀</td> <!--REGISTRADORES--> 
+                    <td id="r11l3" class="text-box">⠀</td>
+                    <!--REGISTRADORES-->
                     <td id="r11l4" class="text-box">⠀</td>
                     <td id="r11l5" class="text-box">⠀</td>
                     <td id="r11l6" class="text-box">⠀</td>
@@ -138,19 +165,21 @@
                     <td id="r11l10" class="text-box">⠀</td>
                     <td>⠀</td>
                     <td>⠀</td>
-                    <td id="r8l16" class="text-box">⠀</td>   <!--MEMÓRIA DE MASSA-->
+                    <td id="r8l16" class="text-box">⠀</td>
+                    <!--MEMÓRIA DE MASSA-->
                     <td>⠀</td>
-                <!-- FIM QUINTA LINHA -->
+                    <!-- FIM QUINTA LINHA -->
                 </tr>
                 <tr>
-                <!-- COMEÇO SEXTA LINHA -->
+                    <!-- COMEÇO SEXTA LINHA -->
                     <td>⠀</td>
                     <td>⠀</td>
                     <td>⠀</td>
                     <td>⠀</td>
                     <td>⠀</td>
                     <td>⠀</td>
-                    <td id="r3l2" class="text-box">⠀</td> <!--REGISTRADORES-->
+                    <td id="r3l2" class="text-box">⠀</td>
+                    <!--REGISTRADORES-->
                     <td>⠀</td>
                     <td>⠀</td>
                     <td>⠀</td>
@@ -160,19 +189,21 @@
                     <td id="r7l5" class="text-box">⠀</td>
                     <td>⠀</td>
                     <td>⠀</td>
-                    <td id="r8l15" class="text-box">⠀</td>   <!--MEMÓRIA DE MASSA-->
+                    <td id="r8l15" class="text-box">⠀</td>
+                    <!--MEMÓRIA DE MASSA-->
                     <td>⠀</td>
-                <!-- FIM SEXTA LINHA -->
+                    <!-- FIM SEXTA LINHA -->
                 </tr>
                 <tr>
-                <!-- COMEÇO SETIMA LINHA -->
+                    <!-- COMEÇO SETIMA LINHA -->
                     <td>⠀</td>
                     <td>⠀</td>
                     <td>⠀</td>
                     <td>⠀</td>
                     <td>⠀</td>
                     <td>⠀</td>
-                    <td id="r3l3" class="text-box">⠀</td> <!--REGISTRADORES-->
+                    <td id="r3l3" class="text-box">⠀</td>
+                    <!--REGISTRADORES-->
                     <td>⠀</td>
                     <td>⠀</td>
                     <td>⠀</td>
@@ -182,19 +213,21 @@
                     <td>⠀</td>
                     <td>⠀</td>
                     <td>⠀</td>
-                    <td id="r8l14" class="text-box">⠀</td>   <!--MEMÓRIA DE MASSA-->
+                    <td id="r8l14" class="text-box">⠀</td>
+                    <!--MEMÓRIA DE MASSA-->
                     <td>⠀</td>
-                <!-- FIM SETIMA LINHA -->
+                    <!-- FIM SETIMA LINHA -->
                 </tr>
                 <tr>
-                <!-- COMEÇO OITAVA LINHA -->
+                    <!-- COMEÇO OITAVA LINHA -->
                     <td>⠀</td>
                     <td>⠀</td>
                     <td>⠀</td>
                     <td>⠀</td>
                     <td>⠀</td>
                     <td class="dica" onclick="dica14()">14</td>
-                    <td id="r3l4" class="text-box">⠀</td> <!--REGISTRADORES-->
+                    <td id="r3l4" class="text-box">⠀</td>
+                    <!--REGISTRADORES-->
                     <td id="r14l2" class="text-box">⠀</td>
                     <td>⠀</td>
                     <td>⠀</td>
@@ -202,21 +235,23 @@
                     <td>⠀</td>
                     <td>⠀</td>
                     <td>⠀</td>
-                    <td>⠀<W/td>
+                    <td>⠀<W /td>
                     <td>⠀</td>
-                    <td id="r8l13" class="text-box">⠀</td>   <!--MEMÓRIA DE MASSA-->
+                    <td id="r8l13" class="text-box">⠀</td>
+                    <!--MEMÓRIA DE MASSA-->
                     <td>⠀</td>
-                <!-- FIM OITAVA LINHA -->
+                    <!-- FIM OITAVA LINHA -->
                 </tr>
                 <tr>
-                <!-- COMEÇO NONA LINHA -->
+                    <!-- COMEÇO NONA LINHA -->
                     <td>⠀</td>
                     <td>⠀</td>
                     <td>⠀</td>
                     <td>⠀</td>
                     <td>⠀</td>
                     <td>⠀</td>
-                    <td id="r3l5" class="text-box">⠀</td> <!--REGISTRADORES-->
+                    <td id="r3l5" class="text-box">⠀</td>
+                    <!--REGISTRADORES-->
                     <td>⠀</td>
                     <td class="dica" onclick="dica9()">9</td>
                     <td>⠀</td>
@@ -226,43 +261,49 @@
                     <td>⠀</td>
                     <td>⠀</td>
                     <td>⠀</td>
-                    <td id="r8l12" class="text-box">⠀</td>   <!--MEMÓRIA DE MASSA-->
+                    <td id="r8l12" class="text-box">⠀</td>
+                    <!--MEMÓRIA DE MASSA-->
                     <td>⠀</td>
-                <!-- FIM NONA LINHA -->
+                    <!-- FIM NONA LINHA -->
                 </tr>
                 <tr>
-                <!-- COMEÇO DECIMA LINHA -->
+                    <!-- COMEÇO DECIMA LINHA -->
                     <td>⠀</td>
                     <td>⠀</td>
                     <td>⠀</td>
                     <td>⠀</td>
                     <td>⠀</td>
                     <td>⠀</td>
-                    <td id="r3l6" class="text-box">⠀</td> <!--REGISTRADORES-->
+                    <td id="r3l6" class="text-box">⠀</td>
+                    <!--REGISTRADORES-->
                     <td>⠀</td>
-                    <td id="r9l1" class="text-box">⠀</td> <!--DMA-->
-                    <td>⠀</td>
-                    <td>⠀</td>
-                    <td>⠀</td>
-                    <td>⠀</td>
+                    <td id="r9l1" class="text-box">⠀</td>
+                    <!--DMA-->
                     <td>⠀</td>
                     <td>⠀</td>
                     <td>⠀</td>
-                    <td id="r8l11" class="space">⠀</td>   <!--MEMÓRIA DE MASSA-->
                     <td>⠀</td>
-                <!-- FIM DECIMA LINHA -->
+                    <td>⠀</td>
+                    <td>⠀</td>
+                    <td>⠀</td>
+                    <td id="r8l11" class="space">⠀</td>
+                    <!--MEMÓRIA DE MASSA-->
+                    <td>⠀</td>
+                    <!-- FIM DECIMA LINHA -->
                 </tr>
                 <tr>
-                <!-- COMEÇO DECIMA PRIMEIRA LINHA -->
+                    <!-- COMEÇO DECIMA PRIMEIRA LINHA -->
                     <td>⠀</td>
                     <td>⠀</td>
                     <td>⠀</td>
                     <td>⠀</td>
                     <td>⠀</td>
                     <td class="dica" onclick="dica4()">4</td>
-                    <td id="r3l7" class="text-box">⠀</td> <!--REGISTRADORES-->
+                    <td id="r3l7" class="text-box">⠀</td>
+                    <!--REGISTRADORES-->
                     <td id="r4l2" class="text-box">⠀</td>
-                    <td id="r4l3" class="text-box">⠀</td> <!--DMA-->
+                    <td id="r4l3" class="text-box">⠀</td>
+                    <!--DMA-->
                     <td>⠀</td>
                     <td>⠀</td>
                     <td>⠀</td>
@@ -270,21 +311,24 @@
                     <td>⠀</td>
                     <td>⠀</td>
                     <td>⠀</td>
-                    <td id="r8l10" class="text-box">⠀</td>   <!--MEMÓRIA DE MASSA-->
+                    <td id="r8l10" class="text-box">⠀</td>
+                    <!--MEMÓRIA DE MASSA-->
                     <td>⠀</td>
-                <!-- FIM DECIMA PRIMEIRA LINHA -->
+                    <!-- FIM DECIMA PRIMEIRA LINHA -->
                 </tr>
                 <tr>
-                <!-- COMEÇO DECIMA SEGUNDA LINHA -->
+                    <!-- COMEÇO DECIMA SEGUNDA LINHA -->
                     <td>⠀</td>
                     <td>⠀</td>
                     <td>⠀</td>
                     <td>⠀</td>
                     <td>⠀</td>
                     <td>⠀</td>
-                    <td id="r3l8" class="text-box">⠀</td> <!--REGISTRADORES-->
+                    <td id="r3l8" class="text-box">⠀</td>
+                    <!--REGISTRADORES-->
                     <td>⠀</td>
-                    <td id="r9l3" class="text-box">⠀</td>   <!--DMA-->
+                    <td id="r9l3" class="text-box">⠀</td>
+                    <!--DMA-->
                     <td>⠀</td>
                     <td>⠀</td>
                     <td>⠀</td>
@@ -292,19 +336,21 @@
                     <td>⠀</td>
                     <td>⠀</td>
                     <td>⠀</td>
-                    <td id="r8l9" class="text-box">⠀</td>    <!--MEMÓRIA DE MASSA-->
+                    <td id="r8l9" class="text-box">⠀</td>
+                    <!--MEMÓRIA DE MASSA-->
                     <td>⠀</td>
-                <!-- FIM DECIMA SEGUNDA LINHA -->
+                    <!-- FIM DECIMA SEGUNDA LINHA -->
                 </tr>
                 <tr>
-                <!-- COMEÇO DECIMA TERCEIRA LINHA -->
+                    <!-- COMEÇO DECIMA TERCEIRA LINHA -->
                     <td>⠀</td>
                     <td>⠀</td>
                     <td>⠀</td>
                     <td>⠀</td>
                     <td>⠀</td>
                     <td class="dica" onclick="dica12()">12</td>
-                    <td id="r3l9" class="text-box">⠀</td> <!--REGISTRADORES-->
+                    <td id="r3l9" class="text-box">⠀</td>
+                    <!--REGISTRADORES-->
                     <td id="r12l2" class="text-box">⠀</td>
                     <td id="r12l3" class="text-box">⠀</td>
                     <td id="r12l4" class="text-box">⠀</td>
@@ -314,9 +360,10 @@
                     <td id="r12l8" class="text-box">⠀</td>
                     <td>⠀</td>
                     <td>⠀</td>
-                    <td id="r8l8" class="space">⠀</td>    <!--MEMÓRIA DE MASSA-->
+                    <td id="r8l8" class="space">⠀</td>
+                    <!--MEMÓRIA DE MASSA-->
                     <td>⠀</td>
-                <!-- FIM DECIMA TERCEIRA LINHA -->
+                    <!-- FIM DECIMA TERCEIRA LINHA -->
                 </tr>
                 <tr>
                     <!-- COMEÇO DECIMA QUARTA LINHA -->
@@ -326,7 +373,8 @@
                     <td>⠀</td>
                     <td>⠀</td>
                     <td>⠀</td>
-                    <td id="r3l10" class="text-box">⠀</td> <!--REGISTRADORES-->
+                    <td id="r3l10" class="text-box">⠀</td>
+                    <!--REGISTRADORES-->
                     <td>⠀</td>
                     <td>⠀</td>
                     <td>⠀</td>
@@ -336,7 +384,8 @@
                     <td>⠀</td>
                     <td>⠀</td>
                     <td>⠀</td>
-                    <td id="r8l7" class="text-box">⠀</td>    <!--MEMÓRIA DE MASSA-->
+                    <td id="r8l7" class="text-box">⠀</td>
+                    <!--MEMÓRIA DE MASSA-->
                     <td>⠀</td>
                     <!-- FIM DECIMA QUARTA LINHA -->
                 </tr>
@@ -348,7 +397,8 @@
                     <td>⠀</td>
                     <td>⠀</td>
                     <td class="dica" onclick="dica5()">5</td>
-                    <td id="r3l11" class="text-box">⠀</td> <!--REGISTRADORES-->
+                    <td id="r3l11" class="text-box">⠀</td>
+                    <!--REGISTRADORES-->
                     <td id="r5l2" class="text-box">⠀</td>
                     <td id="r5l3" class="text-box">⠀</td>
                     <td>⠀</td>
@@ -358,7 +408,8 @@
                     <td>⠀</td>
                     <td>⠀</td>
                     <td class="dica" onclick="dica13()">13</td>
-                    <td id="r8l6" class="text-box">⠀</td> <!--MEMÓRIA DE MASSA-->
+                    <td id="r8l6" class="text-box">⠀</td>
+                    <!--MEMÓRIA DE MASSA-->
                     <td id="r13l2" class="text-box">⠀</td>
                     <!-- FIM DECIMA QUINTA LINHA -->
                 </tr>
@@ -370,7 +421,8 @@
                     <td>⠀</td>
                     <td>⠀</td>
                     <td>⠀</td>
-                    <td id="r3l12" class="text-box">⠀</td> <!--REGISTRADORES-->
+                    <td id="r3l12" class="text-box">⠀</td>
+                    <!--REGISTRADORES-->
                     <td>⠀</td>
                     <td>⠀</td>
                     <td>⠀</td>
@@ -380,7 +432,8 @@
                     <td>⠀</td>
                     <td>⠀</td>
                     <td>⠀</td>
-                    <td id="r8l5"  class="text-box">⠀</td> <!--MEMÓRIA DE MASSA-->    
+                    <td id="r8l5" class="text-box">⠀</td>
+                    <!--MEMÓRIA DE MASSA-->
                     <td>⠀</td>
                     <!-- FIM DECIMA SEXTA LINHA -->
                 </tr>
@@ -392,7 +445,8 @@
                     <td>⠀</td>
                     <td>⠀</td>
                     <td>⠀</td>
-                    <td id="r3l13" class="text-box">⠀</td> <!--REGISTRADORES-->
+                    <td id="r3l13" class="text-box">⠀</td>
+                    <!--REGISTRADORES-->
                     <td>⠀</td>
                     <td>⠀</td>
                     <td>⠀</td>
@@ -402,7 +456,8 @@
                     <td id="r10l2" class="text-box">⠀</td>
                     <td>⠀</td>
                     <td>⠀</td>
-                    <td id="r8l4" class="text-box">⠀</td>        <!--MEMÓRIA DE MASSA-->
+                    <td id="r8l4" class="text-box">⠀</td>
+                    <!--MEMÓRIA DE MASSA-->
                     <td>⠀</td>
                     <!-- FIM DECIMA SETIMA LINHA -->
                 </tr>
@@ -424,7 +479,8 @@
                     <td>⠀</td>
                     <td>⠀</td>
                     <td>⠀</td>
-                    <td id="r8l3" class="text-box">⠀</td>    <!--MEMÓRIA DE MASSA-->
+                    <td id="r8l3" class="text-box">⠀</td>
+                    <!--MEMÓRIA DE MASSA-->
                     <td>⠀</td>
                     <!-- FIM DECIMA OITAVA LINHA -->
                 </tr>
@@ -443,10 +499,11 @@
                     <td id="r16l6" class="text-box">⠀</td>
                     <td id="r16l7" class="text-box">⠀</td>
                     <td id="r16l8" class="text-box">⠀</td>
-                    <td id="r16l9" class="text-box">⠀</td>   
+                    <td id="r16l9" class="text-box">⠀</td>
                     <td>⠀</td>
                     <td>⠀</td>
-                    <td id="r8l2" class="text-box">⠀</td>    <!--MEMÓRIA DE MASSA-->
+                    <td id="r8l2" class="text-box">⠀</td>
+                    <!--MEMÓRIA DE MASSA-->
                     <td>⠀</td>
                     <!-- FIM DECIMA NONA LINHA -->
                 </tr>
@@ -468,7 +525,8 @@
                     <td id="r6l2" class="text-box">⠀</td>
                     <td id="r6l3" class="text-box">⠀</td>
                     <td id="r6l4" class="text-box">⠀</td>
-                    <td id="r6l5" class="text-box">⠀</td>   <!--MEMÓRIA DE MASSA-->
+                    <td id="r6l5" class="text-box">⠀</td>
+                    <!--MEMÓRIA DE MASSA-->
                     <td>⠀</td>
                     <!-- FIM DECIMA VIGESIMO LINHA -->
                 </tr>
@@ -494,14 +552,15 @@
                     <td>⠀</td>
                     <!-- FIM VIGESIMA PRIMEIRA LINHA -->
                 </tr>
-        
+
             </table>
-    
+
         </div>
 
-        <div>
-            Insira sua resposta: <input minlength="2" maxlength="16" id="resposta"><button onclick="teste()">TENTAR</button>
-        
+        <div class="verificar-certo" style="margin-left: 2%;font-size: 1.5rem;">
+            Insira sua resposta: <input minlength="2" maxlength="16" id="resposta"><button
+                onclick="teste()">TENTAR</button>
+
             <select id="numero_tentativa">
                 <option id="valor1" selected value="CPU">1</option>
                 <option id="valor2" value="ULA">2</option>
@@ -521,9 +580,60 @@
                 <option id="valor16" value="QUAD CORE">16</option>
             </select><br>
             Respostas Certas: <div id="true_answer"></div>
-            <img id="congratulation" style="display: none;" src="https://1.bp.blogspot.com/-kahzZlXrfYc/XceQgW8_0SI/AAAAAAAB11o/yLVmp4ZQ6hsalFLO9SXX_XJeeFqEct6JwCLcBGAsYHQ/s640/ac55bb99d22f13bb3d9ee9fa8d7b186a.gif" alt="PARABÉNS!">
+            <img id="congratulation" style="display: none;"
+                src="https://1.bp.blogspot.com/-kahzZlXrfYc/XceQgW8_0SI/AAAAAAAB11o/yLVmp4ZQ6hsalFLO9SXX_XJeeFqEct6JwCLcBGAsYHQ/s640/ac55bb99d22f13bb3d9ee9fa8d7b186a.gif"
+                alt="PARABÉNS!">
         </div>
 
+        <div style="margin-left: 2%; width: 50%; font-size: 1.09rem; font-family: Arial, Helvetica, sans-serif;">
+            1. Responsável por receber instruções gravadas para inicialização, calcular e realizar tarefas determinadas pelo usuário e é denominado como "Cérebro do computador".
+            <br>
+            <br>
+            2. Responsável pelas operações lógicas e aritméticas dentro do processador.
+            <br>
+            <br>
+            3. Estão no topo da pirâmide da hierarquia das memórias, está localizado na estrutura interna de um microprocessador, responsáveis por uma memória local rápida, podendo ser de propósito geral (movimentação de dados e operações lógicas e aritméticas) ou especial.
+            <br>
+            <br>
+            4. Memória de armazenamento de dados temporários, ao desligar o computador ela é apagada, é volátil.
+            <br>
+            <br>
+            5. Memória de programa atribuída ao coração do computador, é onde as instruções são gravadas, não volátil.
+            <br>
+            <br>
+            6. Memória não volatil usada em microcontroladores capaz de armazenar as informações, e pode ser reprogramada.
+            <br>
+            <br>
+            7. Memória que mantém informações armazenadas sem a necessidade de uma fonte de energia, usadas frequentemente em eletrônicos portáteis.
+            <br>
+            <br>
+            8. Memória não volátil, com grande capacidade de armazenamento e são utilizadas para guardar dados permanentemente.
+            <br>
+            <br>
+            9. Possibilita que os periféricos acessem a memória RAM diretamente, sem ser necessário passarem pelo processador.
+            <br>
+            <br>
+            10. Nome de uma linha de controle usada para selecionar um ou um conjunto de circuitos integrados(chips) conectados ao mesmo barramento de computador.
+            <br>
+            <br>
+            11. Responsável por indicar a localização para onde os dados irão circular internamento no processador.
+            <br>
+            <br>
+            12. Responsável por onde os dados circulam, sendo recebidos ou enviados através deste transporte de informações internamento no processador.
+            <br>
+            <br>
+            13. Modelo de processador da Fabricante Intel, geralmente com 4 threads, considerado como um intermediário.
+            <br>
+            <br>
+            14. Modelo de processador da Fabricante Intel, geralmente com 8 threads, considerado como um top de linha.
+            <br>
+            <br>
+            15. Processador com dois núcleos atuando internamente.
+            <br>
+            <br>
+            16. Processador com quatro núcleos atuando internamente.
+
+        </div>
     </div>
 
 </body>
@@ -534,14 +644,14 @@
 
     function teste() {
         var tentativa = resposta.value.trim().toUpperCase();
-        
+
         var combobox = numero_tentativa.value;
 
-         // FUNÇÃO - SE A TENTATIVA ESTIVER VAZIA OU O COMPRIMENTO FOR MENOR QUE 2, COMPLETAR COM ESPAÇO VAZIO
+        // FUNÇÃO - SE A TENTATIVA ESTIVER VAZIA OU O COMPRIMENTO FOR MENOR QUE 2, COMPLETAR COM ESPAÇO VAZIO
         if (tentativa == '' || tentativa.length < 2) {
             tentativa = '⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀';
         }
-        else if(tentativa.length < combobox.length){
+        else if (tentativa.length < combobox.length) {
             tentativa += `⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀`;
         }
 
@@ -553,15 +663,15 @@
             r1l1.innerHTML = "C";
             r1l2.innerHTML = "P";
             r1l3.innerHTML = "U";
-            
+
             r1l1.style.backgroundColor = 'lightgreen';
             r1l2.style.backgroundColor = 'lightgreen';
             r1l3.style.backgroundColor = 'lightgreen';
-            
+
             // CONTADOR DE RESPOSTA CERTA 
             contador += 1;
             true_answer.innerHTML = contador;
-        } 
+        }
         else if (tentativa == 'ULA' && combobox == 'ULA') {
             alert("CERTA RESPOSTA!")
             r1l3.innerHTML = "U"
@@ -571,12 +681,12 @@
             r1l3.style.backgroundColor = 'lightgreen';
             r2l2.style.backgroundColor = 'lightgreen';
             r2l3.style.backgroundColor = 'lightgreen';
-            
+
             // CONTADOR DE RESPOSTA CERTA 
             contador += 1;
             true_answer.innerHTML = contador;
         }
-        else if(tentativa == 'REGISTRADORES' && combobox == 'REGISTRADORES'){
+        else if (tentativa == 'REGISTRADORES' && combobox == 'REGISTRADORES') {
             alert("CERTA RESPOSTA!")
             r11l3.innerHTML = "R";
             r3l2.innerHTML = "E";
@@ -605,12 +715,12 @@
             r3l11.style.backgroundColor = 'lightgreen';
             r3l12.style.backgroundColor = 'lightgreen';
             r3l13.style.backgroundColor = 'lightgreen';
-            
+
             // CONTADOR DE RESPOSTA CERTA 
             contador += 1;
             true_answer.innerHTML = contador;
         }
-        else if(tentativa == 'RAM' && combobox == 'RAM'){
+        else if (tentativa == 'RAM' && combobox == 'RAM') {
             alert("CERTA RESPOSTA!")
             r3l7.innerHTML = 'R';
             r4l2.innerHTML = 'A';
@@ -620,12 +730,12 @@
             r3l7.style.backgroundColor = 'lightgreen'
             r4l2.style.backgroundColor = 'lightgreen'
             r4l3.style.backgroundColor = 'lightgreen'
-            
+
             // CONTADOR DE RESPOSTA CERTA 
             contador += 1;
             true_answer.innerHTML = contador;
         }
-        else if(tentativa == 'ROM' && combobox == 'ROM'){
+        else if (tentativa == 'ROM' && combobox == 'ROM') {
             alert("CERTA RESPOSTA!")
             r3l11.innerHTML = 'R';
             r5l2.innerHTML = 'O';
@@ -634,12 +744,12 @@
             r3l11.style.backgroundColor = 'lightgreen'
             r5l2.style.backgroundColor = 'lightgreen'
             r5l3.style.backgroundColor = 'lightgreen'
-            
+
             // CONTADOR DE REPOSTA CERTA 
             contador += 1;
             true_answer.innerHTML = contador;
         }
-        else if(tentativa == 'EPROM' && combobox == 'EPROM'){
+        else if (tentativa == 'EPROM' && combobox == 'EPROM') {
             alert("CERTA RESPOSTA!")
             r15l9.innerHTML = 'E';
             r6l2.innerHTML = 'P';
@@ -657,7 +767,7 @@
             contador += 1;
             true_answer.innerHTML = contador;
         }
-        else if(tentativa == 'FLASH' && combobox == 'FLASH'){
+        else if (tentativa == 'FLASH' && combobox == 'FLASH') {
             alert("CERTA RESPOSTA!")
             r7l1.innerHTML = 'F';
             r7l2.innerHTML = 'L';
@@ -675,7 +785,7 @@
             contador += 1;
             true_answer.innerHTML = contador;
         }
-        else if(tentativa == 'MEMORIA DE MASSA' && combobox == 'MEMORIA DE MASSA' || tentativa == 'MEMÓRIA DE MASSA' && combobox == 'MEMORIA DE MASSA'){
+        else if (tentativa == 'MEMORIA DE MASSA' && combobox == 'MEMORIA DE MASSA' || tentativa == 'MEMÓRIA DE MASSA' && combobox == 'MEMORIA DE MASSA') {
             alert("CERTA RESPOSTA!")
             r6l5.innerHTML = 'M';
             r8l2.innerHTML = 'E';
@@ -710,12 +820,12 @@
             r8l14.style.backgroundColor = 'lightgreen';
             r8l15.style.backgroundColor = 'lightgreen';
             r8l16.style.backgroundColor = 'lightgreen';
-            
+
             // CONTADOR DE RESPOSTA CERTA 
             contador += 1;
             true_answer.innerHTML = contador;
         }
-        else if(tentativa == 'DMA' && combobox == 'DMA'){
+        else if (tentativa == 'DMA' && combobox == 'DMA') {
             alert("CERTA RESPOSTA!")
             r9l1.innerHTML = 'D';
             r4l3.innerHTML = 'M';
@@ -729,7 +839,7 @@
             contador += 1;
             true_answer.innerHTML = contador;
         }
-        else if(tentativa == 'CS' && combobox == 'CS'){
+        else if (tentativa == 'CS' && combobox == 'CS') {
             alert("CERTA RESPOSTA!")
 
             r10l1.innerHTML = "C";
@@ -742,37 +852,37 @@
             contador += 1;
             true_answer.innerHTML = contador;
         }
-        else if(tentativa == 'ADDRESS BUS' && combobox == 'ADDRESS BUS'){
+        else if (tentativa == 'ADDRESS BUS' && combobox == 'ADDRESS BUS') {
             alert("CERTA RESPOSTA!")
-             r2l3.innerHTML = "A";
+            r2l3.innerHTML = "A";
             r11l0.innerHTML = "D";
             r11l2.innerHTML = "D";
             r11l3.innerHTML = "R";
-            r11l4.innerHTML = "E"; 
-            r11l5.innerHTML = "S"; 
-            r11l6.innerHTML = "S"; 
-            r11l7.innerHTML = "⠀"; 
-            r11l8.innerHTML = "B"; 
-            r11l9.innerHTML = "U"; 
-           r11l10.innerHTML = "S"; 
+            r11l4.innerHTML = "E";
+            r11l5.innerHTML = "S";
+            r11l6.innerHTML = "S";
+            r11l7.innerHTML = "⠀";
+            r11l8.innerHTML = "B";
+            r11l9.innerHTML = "U";
+            r11l10.innerHTML = "S";
 
             r2l3.style.backgroundColor = "lightgreen";
             r11l0.style.backgroundColor = "lightgreen";
             r11l2.style.backgroundColor = "lightgreen";
             r11l3.style.backgroundColor = "lightgreen";
-            r11l4.style.backgroundColor = "lightgreen"; 
-            r11l5.style.backgroundColor = "lightgreen"; 
-            r11l6.style.backgroundColor = "lightgreen"; 
-            r11l7.style.backgroundColor = "black"; 
-            r11l8.style.backgroundColor = "lightgreen"; 
-            r11l9.style.backgroundColor = "lightgreen"; 
-           r11l10.style.backgroundColor = "lightgreen"; 
+            r11l4.style.backgroundColor = "lightgreen";
+            r11l5.style.backgroundColor = "lightgreen";
+            r11l6.style.backgroundColor = "lightgreen";
+            r11l7.style.backgroundColor = "black";
+            r11l8.style.backgroundColor = "lightgreen";
+            r11l9.style.backgroundColor = "lightgreen";
+            r11l10.style.backgroundColor = "lightgreen";
 
-           // CONTADOR DE RESPOSTA CERTA 
+            // CONTADOR DE RESPOSTA CERTA 
             contador += 1;
             true_answer.innerHTML = contador;
         }
-        else if(tentativa == 'DATA BUS' && combobox == 'DATA BUS'){
+        else if (tentativa == 'DATA BUS' && combobox == 'DATA BUS') {
             alert("CERTA RESPOSTA!")
             r3l9.innerHTML = "D";
             r12l2.innerHTML = "A";
@@ -791,24 +901,24 @@
             r12l6.style.backgroundColor = "lightgreen";
             r12l7.style.backgroundColor = "lightgreen";
             r12l8.style.backgroundColor = "lightgreen";
-            
+
             // CONTADOR DE RESPOSTA CERTA 
             contador += 1;
             true_answer.innerHTML = contador;
         }
-        else if(tentativa == 'I5' && combobox == 'I5'){
+        else if (tentativa == 'I5' && combobox == 'I5') {
             alert("CERTA RESPOSTA!")
             r8l6.innerHTML = "I";
             r13l2.innerHTML = "5";
 
             r8l6.style.backgroundColor = "lightgreen"
             r13l2.style.backgroundColor = "lightgreen"
-            
+
             // CONTADOR DE RESPOSTA CERTA 
             contador += 1;
             true_answer.innerHTML = contador;
         }
-        else if(tentativa == 'I7' && combobox == 'I7'){
+        else if (tentativa == 'I7' && combobox == 'I7') {
             alert("CERTA RESPOSTA!")
             r3l4.innerHTML = "I";
             r14l2.innerHTML = "7";
@@ -820,7 +930,7 @@
             contador += 1;
             true_answer.innerHTML = contador;
         }
-        else if(tentativa == 'DUAL CORE' && combobox == 'DUAL CORE'){
+        else if (tentativa == 'DUAL CORE' && combobox == 'DUAL CORE') {
             alert("CERTA RESPOSTA!")
             r15l1.innerHTML = "D";
             r12l7.innerHTML = "U";
@@ -841,12 +951,12 @@
             r15l7.style.backgroundColor = "lightgreen";
             r16l8.style.backgroundColor = "lightgreen";
             r15l9.style.backgroundColor = "lightgreen";
-            
+
             // CONTADOR DE RESPOSTA CERTA 
             contador += 1;
             true_answer.innerHTML = contador;
         }
-        else if(tentativa == 'QUAD CORE' && combobox == 'QUAD CORE'){
+        else if (tentativa == 'QUAD CORE' && combobox == 'QUAD CORE') {
             alert("CERTA RESPOSTA!")
             r16l1.innerHTML = "Q";
             r16l2.innerHTML = "U";
@@ -872,12 +982,12 @@
             contador += 1;
             true_answer.innerHTML = contador;
         }
-        
+
         // FIM VALIDAÇÃO RESPOSTA CERTA
-        
+
         // VALIDAÇÃO DE RESPOSTA ERRADA
         // SE A TENTATIVA (INPUT) FOR DIFERENTE DO VALOR DA COMBOBOX (RESPOSTA CERTA), 
-        
+
         else if (tentativa != 'CPU' && combobox == 'CPU') {
             alert("ERROOOOOOOOOOOOOU!!! TENTE NOVAMENTE.")
             r1l1.innerHTML = tentativa[0]
@@ -887,7 +997,7 @@
             r1l1.style.backgroundColor = 'red';
             r1l2.style.backgroundColor = 'red';
             r1l3.style.backgroundColor = 'red';
-        } 
+        }
         else if (tentativa != "ULA" && combobox == "ULA") {
             alert("ERROOOOOOOOOOOOOU!!! TENTE NOVAMENTE.")
             r1l3.innerHTML = tentativa[0]
@@ -912,7 +1022,7 @@
             r3l11.innerHTML = tentativa[10];
             r3l12.innerHTML = tentativa[11];
             r3l13.innerHTML = tentativa[12];
-            
+
             r11l3.style.backgroundColor = 'red';
             r3l2.style.backgroundColor = 'red';
             r3l3.style.backgroundColor = 'red';
@@ -926,7 +1036,7 @@
             r3l11.style.backgroundColor = 'red';
             r3l12.style.backgroundColor = 'red';
             r3l13.style.backgroundColor = 'red';
-        } 
+        }
         else if (tentativa != "RAM" && combobox == "RAM") {
             alert("ERROOOOOOOOOOOOOU!!! TENTE NOVAMENTE.")
             r3l7.innerHTML = tentativa[0];
@@ -948,7 +1058,7 @@
             r5l2.style.backgroundColor = 'red';
             r5l3.style.backgroundColor = 'red';
 
-        } 
+        }
         else if (tentativa != "EPROM" && combobox == "EPROM") {
             alert("ERROOOOOOOOOOOOOU!!! TENTE NOVAMENTE.")
             r15l9.innerHTML = tentativa[0];
@@ -962,7 +1072,7 @@
             r6l3.style.backgroundColor = 'red';
             r6l4.style.backgroundColor = 'red';
             r6l5.style.backgroundColor = 'red';
-            
+
         }
         else if (tentativa != "FLASH" && combobox == "FLASH") {
             alert("ERROOOOOOOOOOOOOU!!! TENTE NOVAMENTE.")
@@ -977,8 +1087,8 @@
             r7l3.style.backgroundColor = 'red';
             r11l10.style.backgroundColor = 'red';
             r7l5.style.backgroundColor = 'red';
-            
-        } 
+
+        }
         else if (tentativa != "MEMORIA DE MASSA" && combobox == "MEMORIA DE MASSA") {
             alert("ERROOOOOOOOOOOOOU!!! TENTE NOVAMENTE.")
             r6l5.innerHTML = tentativa[0];
@@ -1024,8 +1134,8 @@
             r9l1.style.backgroundColor = 'red';
             r4l3.style.backgroundColor = 'red';
             r9l3.style.backgroundColor = 'red';
-            
-        } 
+
+        }
         else if (tentativa != "CS" && combobox == "CS") {
             alert("ERROOOOOOOOOOOOOU!!! TENTE NOVAMENTE.")
 
@@ -1034,39 +1144,39 @@
 
             r10l1.style.backgroundColor = "red";
             r10l2.style.backgroundColor = "red";
-            
-        } 
+
+        }
         else if (tentativa != "ADDRESS BUS" && combobox == "ADDRESS BUS") {
             alert("ERROOOOOOOOOOOOOU!!! TENTE NOVAMENTE.")
-            r2l3.innerHTML =  tentativa[0];
+            r2l3.innerHTML = tentativa[0];
             r11l0.innerHTML = tentativa[1]
             r11l2.innerHTML = tentativa[2];
             r11l3.innerHTML = tentativa[3];
-            r11l4.innerHTML = tentativa[4]; 
-            r11l5.innerHTML = tentativa[5]; 
-            r11l6.innerHTML = tentativa[6]; 
-            r11l7.innerHTML = tentativa[7] 
-            r11l8.innerHTML = tentativa[8]; 
-            r11l9.innerHTML = tentativa[9]; 
-           r11l10.innerHTML = tentativa[10]; 
+            r11l4.innerHTML = tentativa[4];
+            r11l5.innerHTML = tentativa[5];
+            r11l6.innerHTML = tentativa[6];
+            r11l7.innerHTML = tentativa[7]
+            r11l8.innerHTML = tentativa[8];
+            r11l9.innerHTML = tentativa[9];
+            r11l10.innerHTML = tentativa[10];
 
             r2l3.style.backgroundColor = "red";
             r11l0.style.backgroundColor = "red";
             r11l2.style.backgroundColor = "red";
             r11l3.style.backgroundColor = "red";
-            r11l4.style.backgroundColor = "red"; 
-            r11l5.style.backgroundColor = "red"; 
-            r11l6.style.backgroundColor = "red"; 
-            r11l7.style.backgroundColor = "black"; 
-            r11l8.style.backgroundColor = "red"; 
-            r11l9.style.backgroundColor = "red"; 
-           r11l10.style.backgroundColor = "red"; 
+            r11l4.style.backgroundColor = "red";
+            r11l5.style.backgroundColor = "red";
+            r11l6.style.backgroundColor = "red";
+            r11l7.style.backgroundColor = "black";
+            r11l8.style.backgroundColor = "red";
+            r11l9.style.backgroundColor = "red";
+            r11l10.style.backgroundColor = "red";
 
-            
-        } 
+
+        }
         else if (tentativa != "DATA BUS" && combobox == "DATA BUS") {
             alert("ERROOOOOOOOOOOOOU!!! TENTE NOVAMENTE.")
-            r3l9.innerHTML  = tentativa[0];
+            r3l9.innerHTML = tentativa[0];
             r12l2.innerHTML = tentativa[1];
             r12l3.innerHTML = tentativa[2];
             r12l4.innerHTML = tentativa[3];
@@ -1083,7 +1193,7 @@
             r12l6.style.backgroundColor = "red";
             r12l7.style.backgroundColor = "red";
             r12l8.style.backgroundColor = "red";
-        } 
+        }
         else if (tentativa != "I5" && combobox == "I5") {
             alert("ERROOOOOOOOOOOOOU!!! TENTE NOVAMENTE.")
             r8l6.innerHTML = tentativa[0];
@@ -1091,8 +1201,8 @@
 
             r8l6.style.backgroundColor = "red";
             r13l2.style.backgroundColor = "red";
-            
-        } 
+
+        }
         else if (tentativa != "I7" && combobox == "I7") {
             alert("ERROOOOOOOOOOOOOU!!! TENTE NOVAMENTE.")
             r3l4.innerHTML = tentativa[0];
@@ -1101,8 +1211,8 @@
             r3l4.style.backgroundColor = "red";
             r14l2.style.backgroundColor = "red";
 
-            
-        } 
+
+        }
         else if (tentativa != "DUAL CORE" && combobox == "DUAL CORE") {
             alert("ERROOOOOOOOOOOOOU!!! TENTE NOVAMENTE.")
             r15l1.innerHTML = tentativa[0];
@@ -1115,17 +1225,17 @@
             r16l8.innerHTML = tentativa[7];
             r15l9.innerHTML = tentativa[8];
 
-            r15l1.style.backgroundColor = "red"; 
-            r12l7.style.backgroundColor = "red"; 
-            r15l3.style.backgroundColor = "red"; 
-            r15l4.style.backgroundColor = "red"; 
-            r15l5.style.backgroundColor = "black"; 
-            r10l1.style.backgroundColor = "red"; 
-            r15l7.style.backgroundColor = "red"; 
-            r16l8.style.backgroundColor = "red"; 
-            r15l9.style.backgroundColor = "red"; 
-            
-        } 
+            r15l1.style.backgroundColor = "red";
+            r12l7.style.backgroundColor = "red";
+            r15l3.style.backgroundColor = "red";
+            r15l4.style.backgroundColor = "red";
+            r15l5.style.backgroundColor = "black";
+            r10l1.style.backgroundColor = "red";
+            r15l7.style.backgroundColor = "red";
+            r16l8.style.backgroundColor = "red";
+            r15l9.style.backgroundColor = "red";
+
+        }
         else if (tentativa != "QUAD CORE" && combobox == "QUAD CORE") {
             alert("ERROOOOOOOOOOOOOU!!! TENTE NOVAMENTE.")
             r16l1.innerHTML = tentativa[0];
@@ -1149,10 +1259,10 @@
             r16l9.style.backgroundColor = "red";
 
         }
-        
+
         // FIM VALIDAÇÃO RESPOSTA ERRADA
 
-        if(contador == 16){
+        if (contador == 16) {
             true_answer.innerHTML = 'PARABÉNS';
             congratulation.style.display = 'block';
         }
@@ -1160,13 +1270,13 @@
 
 </script>
 
-<!-- FUNÇÕES DE DICA, VALIDAÇÃO DE SELEÇÃO, SENÃO SELECIONADO, A OPÇÃO CLICADA SERÁ SELECIONADA -->
+<!-- FUNÇÕES DE DICA, VALIDAÇÃO DE SELEÇÃO, SE NÃO SELECIONADO, A OPÇÃO CLICADA SERÁ SELECIONADA -->
 <script>
     function dica1() {
         alert("DICA 1: Responsável por receber instruções gravadas para inicialização, calcular e realizar tarefas determinadas pelo usuário e é denominado como Cérebro do Computador");
         if (valor1.selected == false) {
             valor1.selected = true;
-            resposta.value = '';    
+            resposta.value = '';
         }
 
     }
@@ -1211,7 +1321,7 @@
             resposta.value = '';
         }
     }
-    
+
     // function dica7() {
     function dica7() {
         alert("DICA 7: Memória que mantém informações armazenadas sem a necessidade de uma fonte de energia, usadas frequentemente em eletrônicos portáteis.");
