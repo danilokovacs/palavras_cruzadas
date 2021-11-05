@@ -11,21 +11,21 @@
         body {
             background-image: url("https://i.pinimg.com/564x/5d/ca/87/5dca87b6088664ae9fa8080986a58b4c.jpg");
             background-size: cover;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
-        .body{
+        .container{
             color: #FFF;
             text-shadow: 0px 2px #000;
-            background-color: #00000030;
-            border-radius: 10px;
+            background-color: #00000090;
             padding: 2%;
-            /* height: 98vh; */
         }
 
-        /* .cruzadinha {
-            background-color: #00ffff60;
-            border: 5px dotted #FFF;
-        } */
+        .cruzadinha{
+            text-shadow: none;
+            width:70vw;
+            height: 96vh;
+        }
 
         .dica {
             cursor: pointer;
@@ -50,14 +50,81 @@
             height: 2%;
         }
 
+        #dicas{
+            padding: 20px;
+            font-size: 15px;
+        }
+
+        .box-resposta{
+            position: absolute;
+            color: white;
+            align-items: center;
+            font-size: 20px;
+            padding: 6px;
+        }
+
+        table{
+            border-spacing: 1px;
+            table-layout: fixed;
+            text-align: center;
+            width: 40vw;
+            height: 95vh;
+            padding: 20px;
+        }
+
     </style>
 </head>
 
 <body>
-    <div class="body" style="display: flex; margin: 0; padding: 0;">
-        <div class="cruzadinha" style="display:flex;justify-content:space-evenly;width:45%">
-            <table border="0"
-                style="border-spacing: 1px;font-size: 22px;table-layout: fixed;text-align: center;width: 100%">
+    <div class="box-resposta">
+        Insira sua resposta: <input minlength="2" maxlength="16" id="resposta"><button
+            onclick="teste()">TENTAR</button>
+
+        <select id="numero_tentativa">
+            <option id="valor1" selected value="CPU">1</option>
+            <option id="valor2" value="ULA">2</option>
+            <option id="valor3" value="REGISTRADORES">3</option>
+            <option id="valor4" value="RAM">4</option>
+            <option id="valor5" value="ROM">5</option>
+            <option id="valor6" value="EPROM">6</option>
+            <option id="valor7" value="FLASH">7</option>
+            <option id="valor8" value="MEMORIA DE MASSA">8</option>
+            <option id="valor9" value="DMA">9</option>
+            <option id="valor10" value="CS">10</option>
+            <option id="valor11" value="ADDRESS BUS">11</option>
+            <option id="valor12" value="DATA BUS">12</option>
+            <option id="valor13" value="I5">13</option>
+            <option id="valor14" value="I7">14</option>
+            <option id="valor15" value="DUAL CORE">15</option>
+            <option id="valor16" value="QUAD CORE">16</option>
+        </select><br>
+        Respostas Certas: <span id="true_answer"></span>
+    </div>
+    <div class="container" style="display: flex; margin: 0; padding: 0;">
+        <div class="cruzadinha">
+            <table border="0">
+                <tr>
+                    <!-- COMEÇO ZERO LINHA -->
+                    <td>⠀</td>
+                    <td>⠀</td>
+                    <td>⠀</td>
+                    <td>⠀</td>
+                    <td>⠀</td>
+                    <td>⠀</td>
+                    <td>⠀</td>
+                    <td>⠀</td>
+                    <td>⠀</td>
+                    <td>⠀</td>
+                    <td>⠀</td>
+                    <td>⠀</td>
+                    <td>⠀</td>
+                    <td>⠀</td>
+                    <td>⠀</td>
+                    <td>⠀</td>
+                    <td>⠀</td>
+                    <td>⠀</td>
+                    <!-- FIM ZERO LINHA -->
+                </tr>
                 <tr>
                     <!-- COMEÇO PRIMEIRA LINHA -->
                     <td>⠀</td>
@@ -556,36 +623,7 @@
             </table>
 
         </div>
-
-        <div class="verificar-certo" style="margin-left: 2%;font-size: 1.5rem;">
-            Insira sua resposta: <input minlength="2" maxlength="16" id="resposta"><button
-                onclick="teste()">TENTAR</button>
-
-            <select id="numero_tentativa">
-                <option id="valor1" selected value="CPU">1</option>
-                <option id="valor2" value="ULA">2</option>
-                <option id="valor3" value="REGISTRADORES">3</option>
-                <option id="valor4" value="RAM">4</option>
-                <option id="valor5" value="ROM">5</option>
-                <option id="valor6" value="EPROM">6</option>
-                <option id="valor7" value="FLASH">7</option>
-                <option id="valor8" value="MEMORIA DE MASSA">8</option>
-                <option id="valor9" value="DMA">9</option>
-                <option id="valor10" value="CS">10</option>
-                <option id="valor11" value="ADDRESS BUS">11</option>
-                <option id="valor12" value="DATA BUS">12</option>
-                <option id="valor13" value="I5">13</option>
-                <option id="valor14" value="I7">14</option>
-                <option id="valor15" value="DUAL CORE">15</option>
-                <option id="valor16" value="QUAD CORE">16</option>
-            </select><br>
-            Respostas Certas: <div id="true_answer"></div>
-            <img id="congratulation" style="display: none;"
-                src="https://1.bp.blogspot.com/-kahzZlXrfYc/XceQgW8_0SI/AAAAAAAB11o/yLVmp4ZQ6hsalFLO9SXX_XJeeFqEct6JwCLcBGAsYHQ/s640/ac55bb99d22f13bb3d9ee9fa8d7b186a.gif"
-                alt="PARABÉNS!">
-        </div>
-
-        <div style="margin-left: 2%; width: 50%; font-size: 1.09rem; font-family: Arial, Helvetica, sans-serif;">
+        <div id="dicas" class="container">
             1. Responsável por receber instruções gravadas para inicialização, calcular e realizar tarefas determinadas pelo usuário e é denominado como "Cérebro do computador".
             <br>
             <br>
@@ -616,10 +654,10 @@
             10. Nome de uma linha de controle usada para selecionar um ou um conjunto de circuitos integrados(chips) conectados ao mesmo barramento de computador.
             <br>
             <br>
-            11. Responsável por indicar a localização para onde os dados irão circular internamento no processador.
+            11. Responsável por indicar a localização para onde os dados irão circular internamente no processador.
             <br>
             <br>
-            12. Responsável por onde os dados circulam, sendo recebidos ou enviados através deste transporte de informações internamento no processador.
+            12. Responsável por onde os dados circulam, sendo recebidos ou enviados através deste transporte de informações internamente no processador.
             <br>
             <br>
             13. Modelo de processador da Fabricante Intel, geralmente com 4 threads, considerado como um intermediário.
@@ -1262,12 +1300,16 @@
 
         // FIM VALIDAÇÃO RESPOSTA ERRADA
 
+        // SE O CONTADOR CHEGAR A 16 RESPOSTAS CERTAS, PARABÉNS
         if (contador == 16) {
-            true_answer.innerHTML = 'PARABÉNS';
-            congratulation.style.display = 'block';
+            dicas.innerHTML = `<h1>PARABÉNS!! VOCÊ GANHOU!</h1>
+            <img style="width:45vw;" src="https://1.bp.blogspot.com/-kahzZlXrfYc/XceQgW8_0SI/AAAAAAAB11o/yLVmp4ZQ6hsalFLO9SXX_XJeeFqEct6JwCLcBGAsYHQ/s640/ac55bb99d22f13bb3d9ee9fa8d7b186a.gif"
+                alt="PARABÉNS!">
+            `;
+            dicas.style.fontSize = '40px';
+            dicas.style.width = '100%';
         }
     }
-
 </script>
 
 <!-- FUNÇÕES DE DICA, VALIDAÇÃO DE SELEÇÃO, SE NÃO SELECIONADO, A OPÇÃO CLICADA SERÁ SELECIONADA -->
@@ -1353,11 +1395,12 @@
         alert("DICA 10: Nome de uma linha de controle usada para selecionar um ou um conjunto de circuitos integrados(chips) conectados ao mesmo barramento de computador.");
         if (valor10.selected == false) {
             valor10.selected = true;
+            resposta.value = '';
         }
     }
 
     function dica11() {
-        alert("DICA 11: Responsável por indicar a localização para onde os dados irão circular internamento no processador.");
+        alert("DICA 11: Responsável por indicar a localização para onde os dados irão circular internamente no processador.");
         if (valor11.selected == false) {
             valor11.selected = true;
             resposta.value = '';
@@ -1366,7 +1409,7 @@
     }
 
     function dica12() {
-        alert("DICA 12: Responsável por onde os dados circulam, sendo recebidos ou enviados através deste transporte de informações internamento no processador.");
+        alert("DICA 12: Responsável por onde os dados circulam, sendo recebidos ou enviados através deste transporte de informações internamente no processador.");
         if (valor12.selected == false) {
             valor12.selected = true;
             resposta.value = '';
